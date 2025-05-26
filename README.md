@@ -5,7 +5,7 @@
 ## 必要条件
 
 - Python 3.6以上
-- `ambient-python-lib`ライブラリ
+- `ambient-python-lib`ライブラリ（GitHubリポジトリからインストール）
 - `alexa-remote-control`が適切にセットアップされていること
 
 ## インストール方法
@@ -16,11 +16,13 @@
 pip install -r requirements.txt
 ```
 
-または直接インストールする場合：
+または直接GitHubからインストールする場合：
 
 ```bash
-pip install ambient-python-lib
+pip install git+https://github.com/AmbientDataInc/ambient-python-lib.git
 ```
+
+注意: PyPIからのambient-python-libのインストールは現在正常に動作しない可能性があります。最新のバージョンはGitHubリポジトリから直接インストールすることをお勧めします。
 
 2. `alexa-remote-control`をセットアップします（まだの場合）：
 
@@ -37,6 +39,7 @@ cd alexa-remote-control
 1. Ambient設定：
    ```python
    AMBIENT_CHANNEL_ID = "あなたのチャネルID"
+   AMBIENT_WRITE_KEY = "あなたのライトキー"
    AMBIENT_READ_KEY = "あなたのリードキー"
    ```
 

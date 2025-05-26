@@ -1,1 +1,1 @@
-ambient-python-lib>=0.3.0
+git+https://github.com/AmbientDataInc/ambient-python-lib.git

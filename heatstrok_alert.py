@@ -39,6 +39,7 @@ except Exception as e:
 # 設定パラメータ
 # Ambient設定
 AMBIENT_CHANNEL_ID = ""  # ここにあなたのAmbientのチャネルIDを設定
+AMBIENT_WRITE_KEY = ""   # ここにあなたのAmbientのライトキーを設定
 AMBIENT_READ_KEY = ""    # ここにあなたのAmbientのリードキーを設定
 
 # アラート閾値
@@ -61,7 +62,7 @@ def get_ambient_data():
     """
     try:
         # ambient-python-libを使用してデータを取得
-        ambient = Ambient(AMBIENT_CHANNEL_ID, AMBIENT_READ_KEY)
+        ambient = Ambient(AMBIENT_CHANNEL_ID, AMBIENT_WRITE_KEY, AMBIENT_READ_KEY)
         data = ambient.read(n=1)  # 最新の1件のデータを取得
         
         if data and len(data) > 0:
