@@ -118,7 +118,6 @@ grep "co2_alert" /var/log/messages
 
 1. **AMBIENT_CHANNEL_IDが未設定または不正**：
    - チャネルIDが正しく設定されていることを確認してください。
-   - チャネルIDは数値である必要があります。
 
 2. **AMBIENT_READ_KEYが未設定または不正**：
    - リードキーが正しく設定されていることを確認してください。
