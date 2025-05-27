@@ -67,7 +67,7 @@ def get_ambient_data():
         
         if data and len(data) > 0:
             temperature = data[0].get('d1')  # d1が温度
-            humidity = data[0].get('d3')     # d3が湿度
+            humidity = data[0].get('d2')     # d2が湿度
             return temperature, humidity
         else:
             logger.error("Ambientからのデータが空です")

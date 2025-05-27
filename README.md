@@ -41,6 +41,9 @@ cd alexa-remote-control
    AMBIENT_CHANNEL_ID = "あなたのチャネルID"
    AMBIENT_WRITE_KEY = "あなたのライトキー"
    AMBIENT_READ_KEY = "あなたのリードキー"
+
+   temperature = data[0].get('d1')  # データー1に温度を設定した場合はd1
+   humidity = data[0].get('d2')     # データー2に湿度を設定した場合d2
    ```
 
 2. Alexa設定：
